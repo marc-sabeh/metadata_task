@@ -29,6 +29,7 @@ Now that the application is running you can open it on localhost:8080
 
 <hr>
 ## For the apis
+<br>
 3 students and 3 courses will be automatically added to the db, so you can check the get requests
 
 ### Students Crud
