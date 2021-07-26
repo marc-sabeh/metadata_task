@@ -1,0 +1,25 @@
+version: '3.2'
+services:
+  metadata_task:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: springboot-posgresql
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgresMetadata:5432/metadataDb
+    image: springboot-postgres
+    ports:
+      - '8080:8080'
+    depends_on:
+      - postgresMetadata
+  postgresMetadata:
+    restart: always
+    container_name: postgresMetadata
+    image: postgres
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=metadataDb
+
