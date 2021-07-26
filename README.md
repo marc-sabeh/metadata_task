@@ -2,7 +2,7 @@
 
 Here is the task asked of me for mete data company <br>
 All tech stacks asked in the description are used
-##Start the app
+## Start the app
 
 You can start by running the Dockerized project
 
@@ -28,7 +28,7 @@ $ docker-compose up --build
 Now that the application is running you can open it on localhost:8080
 
 <hr>
-##For the apis
+## For the apis
 3 students and 3 courses will be automatically added to the db, so you can check the get requests
 
 ### Students Crud
@@ -72,7 +72,7 @@ Delete http://localhost:8080/api/v1/student/:studentId
 
 <hr>
 
-###Course Crud
+### Course Crud
 
 
 ```bash
@@ -113,7 +113,7 @@ Delete http://localhost:8080/api/v1/course/:courseId
 
 <hr>
 
-###Course and Students
+### Course and Students
 
 
 ```bash
@@ -157,7 +157,7 @@ Get http://localhost:8080/api/v1/studentcourse/report?fieldName=courseTitle&fiel
 ```
 <hr>
 
-##Unit Testing
+## Unit Testing
 
 Unit testing are done in the test folder for all methods that were done <br>
 Using Junit5 and Mockito
